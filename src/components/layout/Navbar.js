@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import logo from "../../images/logo.png";
 
@@ -24,63 +25,24 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbars-rs-food">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="index.html">
+                <Link className="nav-link" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="menu.html">
-                  Menu
-                </a>
+                <Link className="nav-link" to="/search">
+                  Search
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="about.html">
+                <Link className="nav-link" to="/about">
                   About
-                </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="/#"
-                  id="dropdown-a"
-                  data-toggle="dropdown"
-                >
-                  Pages
-                </a>
-                <div className="dropdown-menu" aria-labelledby="dropdown-a">
-                  <a className="dropdown-item" href="reservation.html">
-                    Reservation
-                  </a>
-                  <a className="dropdown-item" href="stuff.html">
-                    Stuff
-                  </a>
-                  <a className="dropdown-item" href="gallery.html">
-                    Gallery
-                  </a>
-                </div>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="/#"
-                  id="dropdown-a"
-                  data-toggle="dropdown"
-                >
-                  Blog
-                </a>
-                <div className="dropdown-menu" aria-labelledby="dropdown-a">
-                  <a className="dropdown-item" href="blog.html">
-                    blog
-                  </a>
-                  <a className="dropdown-item" href="blog-details.html">
-                    blog Single
-                  </a>
-                </div>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="contact.html">
+                <Link className="nav-link" to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
