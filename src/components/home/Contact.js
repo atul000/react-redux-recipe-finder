@@ -2,8 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div style={{ marginTop: "3%", marginLeft: "3%" }}>
-      <br />
+    <div style={{ marginLeft: "3%" }}>
       <h2>For more informaton contact me on following : </h2>
       <a
         href="https://www.linkedin.com/in/atul-beniwal-32a546151/"

@@ -17,7 +17,7 @@ class Receipe extends Component {
     const { loading, receipe } = this.props;
 
     let receipeInfo = (
-      <div className="container" style={{ marginTop: "5%" }}>
+      <div className="container">
         <div className="row">
           <div className="col-md-4 card card-body">
             {receipe.sourceUrl === "N/A" ? (

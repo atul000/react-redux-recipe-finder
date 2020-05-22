@@ -17,8 +17,6 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Navbar />
-        <br />
-        <br />
         <Route exact path="/" component={Landing} />
         <Route exact path="/search" component={Search} />
         <Route exact path="/about/:id" component={About} />
