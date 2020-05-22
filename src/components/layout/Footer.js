@@ -36,8 +36,7 @@ const Footer = () => {
             <div className="col-lg-12">
               <p className="company-name">
                 All Rights Reserved. &copy; 2020{" "}
-                <a href="/#">Yamifood Restaurant</a> Design By :
-                <a href="https://html.design/">Atul Beniwal</a>
+                <a href="/#">Yamifood Restaurant</a> Design By : Atul Beniwal
               </p>
             </div>
           </div>
