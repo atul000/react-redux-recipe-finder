@@ -20,7 +20,7 @@ const ReceipeCard = ({ receipe }) => {
         <p>Ready in {receipe.readyInMinutes} min</p>
         <p>
           Source:{" "}
-          <a href={receipe.sourceUrl} target="_blank">
+          <a href={receipe.sourceUrl} rel="noopener noreferrer" target="_blank">
             Click here
           </a>
         </p>
