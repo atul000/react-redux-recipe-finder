@@ -3,6 +3,9 @@ import "./App.css";
 
 import { HashRouter as Router, Route } from "react-router-dom";
 
+import { Provider } from "react-redux";
+import store from "./store";
+
 import Landing from "./components/home/Landing";
 import Navbar from "./components/layout/Navbar";
 import Search from "./components/home/Search";
@@ -11,15 +14,17 @@ import Contact from "./components/home/Contact";
 
 const App = () => {
   return (
-    <Router>
-      <Navbar />
-      <br />
-      <br />
-      <Route exact path="/" component={Landing} />
-      <Route exact path="/search" component={Search} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/contact" component={Contact} />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Navbar />
+        <br />
+        <br />
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/search" component={Search} />
+        <Route exact path="/about/:id" component={About} />
+        <Route exact path="/contact" component={Contact} />
+      </Router>
+    </Provider>
   );
 };
 

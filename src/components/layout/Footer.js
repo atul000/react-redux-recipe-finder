@@ -30,11 +30,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <p class="company-name">
+      <div className="copyright">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <p className="company-name">
                 All Rights Reserved. &copy; 2020{" "}
                 <a href="/#">Yamifood Restaurant</a> Design By :
                 <a href="https://html.design/">Atul Beniwal</a>
